@@ -172,11 +172,14 @@ input {
         margin-top: 10px; }
   .wrapper .content-main .content-product .text {
     padding: 10px; }
-    .wrapper .content-main .content-product .text p {
-      font-weight: 700;
-      font-size: 15px;
-      margin-top: 3px;
-      margin-bottom: 10px; }
+    .wrapper .content-main .content-product .text a {
+      text-decoration: none;
+      color: black; }
+      .wrapper .content-main .content-product .text a p {
+        font-weight: 700;
+        font-size: 15px;
+        margin-top: 3px;
+        margin-bottom: 10px; }
     .wrapper .content-main .content-product .text .poster {
       height: 30px;
       display: flex;

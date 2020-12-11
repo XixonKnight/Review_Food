@@ -237,11 +237,15 @@ input {
             }
             .text {
                 padding: 10px;
-                p {
-                    font-weight: 700;
-                    font-size: 15px;
-                    margin-top: 3px;
-                    margin-bottom: 10px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    p {
+                        font-weight: 700;
+                        font-size: 15px;
+                        margin-top: 3px;
+                        margin-bottom: 10px;
+                    }
                 }
                 .poster {
                     height: 30px;
