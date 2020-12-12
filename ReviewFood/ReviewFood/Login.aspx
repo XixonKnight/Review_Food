@@ -6,43 +6,50 @@
 <head runat="server">
     <title>Rờ viu food</title>
     <link href="AllCss/Login.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <form id="form1" method="post" runat="server">
-        <div class ="wrapper">
-            <div class="header">Trang đăng nhập rờ viu food</div>
-            <div class ="row"> 
-            <div class ="left">Tên đăng nhập</div>
-            <div class ="right">
-                <asp:TextBox ID="userName" runat="server"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" SetFocusOnError="true" ControlToValidate="userName" ValidationGroup="group1"></asp:RequiredFieldValidator>
-            </div>
-            </div>
-            <div class ="row">
-                <div class ="left">Mật khẩu</div>
-                <div class ="right">
-                    <asp:TextBox ID="passWord" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" SetFocusOnError="true" ControlToValidate="passWord" ValidationGroup="group1" ></asp:RequiredFieldValidator>
+   <div class="wrapper-form">
+        <div class="logo">
+            <img src="image/header/logo.png" alt="">
+        </div>
+        <div class="form">
+            <h2>Đăng Nhập</h2>
+            <form id="formdangnhap" runat="server" method="post" onsubmit="return Login()">
+                <div class="form-group username">
+                    <input type="text" class="form-control " name="Username" id="Username" placeholder="Username">
                 </div>
+                <div class="form-group password">
+                    <input type="password" class="form-control" name="Password" id="password" placeholder="Password">
+                </div>
+                <button class="btn-submit" type="submit">Đăng nhập</button>
+            </form>
+            <div class="register">
+                <a href="Register.aspx">Đăng ký</a>
             </div>
-            <div class ="button">
-                <div class ="button1">
-                    <asp:Button ID="Login1" runat="server" Text="Đăng nhập" OnClick="Login1_Click" />
-                    </div>
-                    <div class ="button1">
-               
-                    <asp:Button ID="register" runat="server" Text="Đăng ký" OnClick="register_Click" />
-                </div>
-                <asp:TextBox ID="ThongBao" runat="server"></asp:TextBox>
-                </div>
-            </div>         
-        
-       
-    </form>
+        </div>
+    </div>
 </body>
     <script>
-        function ThongBao(){
-            alert("Tên đăng nhập hoặc mật khẩu không đúng");
+        function Login() {
+            var username = document.getElementById("Username");
+            var password = document.getElementById("password");
+
+            if (username.value == '' || password.value == '') {
+                alert("Không được để trống");
+                return false;
+            } else if (8 >= username.value.length || username.value.length >= 32) {
+                username.focus();
+                alert("Tên đăng nhập không đúng độ dài quy định");
+                return false;
+            } else if (8 >= password.value.length || password.value.length >= 32) {
+                password.focus();
+                alert("Mật khẩu nhập không đúng độ dài quy định");
+                return false;
+            } else {
+
+                return true;
+            }
         }
     </script>
 </html>

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../image/header/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+}
+
+    .wrapper-form .logo {
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+    }
+
+        .wrapper-form .logo img {
+            width: 100%;
+        }
+
+    .wrapper-form .form h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .wrapper-form .form .form-group {
+        width: 250px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+        .wrapper-form .form .form-group input {
+            border-radius: 25px;
+            padding: 15px;
+            padding-left: 40px;
+            background-color: #eeeeee;
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+
+        .wrapper-form .form .form-group.username:after {
+            position: absolute;
+            display: block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            content: "\f007";
+        }
+
+        .wrapper-form .form .form-group.password:after {
+            position: absolute;
+            display: block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: bold;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            content: "\f023";
+        }
+
+    .wrapper-form .form .btn-submit {
+        cursor: pointer;
+        margin-top: 10px;
+        width: 100%;
+        border: none;
+        background-color: #f60;
+        padding: 15px 0;
+        border-radius: 25px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .wrapper-form .form .btn-cancel {
+        cursor: pointer;
+        margin-top: 10px;
+        width: 100%;
+        background-color: rgb(252, 250, 249);
+        padding: 15px 0;
+        border-radius: 25px;
+        color: blue;
+        border: 1px;
+        font-size: 16px;
+    }
+
+    .wrapper-form .form .register {
+        margin-top: 15px;
+        padding-right: 20px;
+        text-align: right;
+    }
+
+        .wrapper-form .form .register a {
+            font-size: 20px;
+        }
+
+/*# sourceMappingURL=register.css.map */

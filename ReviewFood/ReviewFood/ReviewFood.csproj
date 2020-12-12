@@ -203,8 +203,60 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AllCss\Login.css" />
+    <Content Include="AllCss\register.css" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
+    <Content Include="image\banner\banner.png" />
+    <Content Include="image\header\2.jpg" />
+    <Content Include="image\header\logo.png" />
+    <Content Include="image\main\1.jpeg" />
+    <Content Include="image\main\bookmark1.png" />
+    <Content Include="image\main\bookmark2.png" />
+    <Content Include="image\main\product\1.jpeg" />
+    <Content Include="image\main\product\10.jpeg" />
+    <Content Include="image\main\product\11.jpeg" />
+    <Content Include="image\main\product\12.jpeg" />
+    <Content Include="image\main\product\13.jpeg" />
+    <Content Include="image\main\product\14.jpeg" />
+    <Content Include="image\main\product\15.jpeg" />
+    <Content Include="image\main\product\16.jpeg" />
+    <Content Include="image\main\product\17.jpeg" />
+    <Content Include="image\main\product\18.jpeg" />
+    <Content Include="image\main\product\19.jpeg" />
+    <Content Include="image\main\product\2.jpeg" />
+    <Content Include="image\main\product\20.jpeg" />
+    <Content Include="image\main\product\21.jpeg" />
+    <Content Include="image\main\product\22.jpeg" />
+    <Content Include="image\main\product\23.jpeg" />
+    <Content Include="image\main\product\24.jpeg" />
+    <Content Include="image\main\product\25.jpeg" />
+    <Content Include="image\main\product\26.jpeg" />
+    <Content Include="image\main\product\27.jpeg" />
+    <Content Include="image\main\product\28.jpeg" />
+    <Content Include="image\main\product\29.jpeg" />
+    <Content Include="image\main\product\3.jpeg" />
+    <Content Include="image\main\product\30.jpeg" />
+    <Content Include="image\main\product\31.jpeg" />
+    <Content Include="image\main\product\32.jpeg" />
+    <Content Include="image\main\product\33.jpeg" />
+    <Content Include="image\main\product\34.jpeg" />
+    <Content Include="image\main\product\35.jpeg" />
+    <Content Include="image\main\product\36.jpeg" />
+    <Content Include="image\main\product\37.jpeg" />
+    <Content Include="image\main\product\38.jpeg" />
+    <Content Include="image\main\product\39.jpeg" />
+    <Content Include="image\main\product\4.jpeg" />
+    <Content Include="image\main\product\40.jpeg" />
+    <Content Include="image\main\product\41.jpeg" />
+    <Content Include="image\main\product\42.jpeg" />
+    <Content Include="image\main\product\43.jpeg" />
+    <Content Include="image\main\product\5.jpeg" />
+    <Content Include="image\main\product\6.jpeg" />
+    <Content Include="image\main\product\7.jpeg" />
+    <Content Include="image\main\product\8.jpeg" />
+    <Content Include="image\main\product\9.jpeg" />
+    <Content Include="image\main\user.jpg" />
+    <Content Include="image\main\user.png" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
@@ -245,6 +297,10 @@
     <Compile Include="RFDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AllCss\register.css.map" />
+    <Content Include="AllCss\register.scss" />
+    <Content Include="AllCss\login.css.map" />
+    <Content Include="AllCss\login.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
