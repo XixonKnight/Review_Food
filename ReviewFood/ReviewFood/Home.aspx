@@ -8,14 +8,15 @@
     <link href="AllCss/home.css" rel="stylesheet" />
 </head>
 <body>
-     <div class="wrapper">
+    <div class="wrapper">
         <!-- Header -->
         <div class="header">
             <div class="clearfix">
                 <div class="col col-1">
                     <div class="logo content">
-                        <a href="Home.aspx"></a>
+                        <a href="Home.aspx">
                         <img src="image/header/logo.png" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col col-7">
@@ -45,7 +46,7 @@
         <!-- Nav -->
         <nav>
             <div class="nav-bar">
-                 <div class="title-button">
+                <div class="title-button">
                     <h3>Đề Xuất</h3>
                     <a href="AddPost.aspx">Thêm mới</a>
                 </div>
@@ -62,42 +63,42 @@
         <!-- Content-main -->
         <div class="content-main">
             <div class="clearfix">
-                <div class="col col-3">
-                    <div class="content-product content">
-                    <div class="products">
-                        <%for(int i =0;i<danhSachReviewDtos.Count;i++) %>
-                        <%{ %>
-                        
-                            <div class="image">
-                                <div class="overload">
-                                    <div class="bookmark">
-                                        <div class="icon-image"></div>
-                                    </div>
-                                    <p class="text-content">
-                                        <%:danhSachReviewDtos[i].Content%>,
-                                    </p>
-                                </div>
-                                <img src="image/main/product/1.jpeg" alt="">
+                <%--<div class="col col-3">--%>
+
+                <%--<div class="products">--%>
+                <%for (int i = 0; i < danhSachReviewDtos.Count; i++) %>
+                <%{ %>
+                <div class="content-product content col col-3">
+                    <div class="image">
+                        <div class="overload">
+                            <div class="bookmark">
+                                <div class="icon-image"></div>
                             </div>
-                            <div class="text">
-                                <a href="DetailPost.aspx?Id=<%:danhSachReviewDtos[i].Id%>">
-                                    <p><%:danhSachReviewDtos[i].Address%> </p>
-                                </a>
-                                <div class="poster">
-                                    <div class="user">
-                                        <img src="image/main/user.jpg" alt="">
-                                        <span><%:danhSachReviewDtos[i].UserName%></span>
-                                    </div>
-                                    <div class="count-like">
-                                        <i class="fas fa-thumbs-up"></i>
-                                    </div>
-                                </div>
+                            <p class="text-content">
+                                <%:danhSachReviewDtos[i].Content%>,
+                            </p>
+                        </div>
+                        <img src="image/main/product/1.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <a href="DetailPost.aspx?Id=<%:danhSachReviewDtos[i].Id%>">
+                            <p><%:danhSachReviewDtos[i].Address%> </p>
+                        </a>
+                        <div class="poster">
+                            <div class="user">
+                                <img src="image/main/user.jpg" alt="">
+                                <span><%:danhSachReviewDtos[i].UserName%></span>
                             </div>
-                       
-                        <%} %>
+                            <div class="count-like">
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <%} %>
+                <%--</div>--%>
+                <%--</div>--%>
             </div>
         </div>
 
@@ -168,7 +169,7 @@
             <div class="bottom">
                 <div class="copyright">
                     <span>&copy;</span>
-                    <span> XiXonKnight</span>
+                    <span>XiXonKnight</span>
                 </div>
             </div>
         </div>

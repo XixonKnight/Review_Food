@@ -8,13 +8,15 @@
     <link href="AllCss/details.css" rel="stylesheet" />
 </head>
 <body>
-     <div class="wrapper">
+    <div class="wrapper">
         <!-- Header -->
         <div class="header">
             <div class="clearfix">
                 <div class="col col-1">
                     <div class="logo content">
-                        <img src="../image/header/logo.png" alt="">
+                        <a href="Home.aspx">
+                            <img src="../image/header/logo.png" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col col-7">
@@ -65,12 +67,12 @@
                             <div class="content-text">
                                 <%:post.Content %>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="address-review">
                             <div class="image"></div>
                             <div class="contact">
                                 <h2><%:post.DiaChi %></h2>
-                                
+
                             </div>
                         </div>
                         <div class="comment">
@@ -175,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <!-- Footer -->
@@ -244,7 +246,7 @@
             <div class="bottom">
                 <div class="copyright">
                     <span>&copy;</span>
-                    <span> XiXonKnight</span>
+                    <span>XiXonKnight</span>
                 </div>
             </div>
         </div>
