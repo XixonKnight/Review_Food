@@ -124,3 +124,4 @@ C:\Users\Hieu\Desktop\ReviewFood\ReviewFood\ReviewFood\obj\Debug\ReviewFood.dll
 C:\Users\Hieu\Desktop\ReviewFood\ReviewFood\ReviewFood\obj\Debug\ReviewFood.pdb
 C:\Users\Hieu\Desktop\ReviewFood\ReviewFood\ReviewFood\obj\Debug\ReviewFood.Migrations.init.resources
 C:\Users\Hieu\Desktop\ReviewFood\ReviewFood\ReviewFood\obj\Debug\ReviewFood.csproj.GenerateResource.cache
+C:\Users\Hieu\Desktop\ReviewFood\ReviewFood\ReviewFood\obj\Debug\ReviewFood.Migrations.fixPost.resources

@@ -202,8 +202,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddPost.aspx" />
+    <Content Include="AllCss\AddReview.css" />
+    <Content Include="AllCss\details.css" />
+    <Content Include="AllCss\home.css" />
     <Content Include="AllCss\Login.css" />
     <Content Include="AllCss\register.css" />
+    <Content Include="DetailPost.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
     <Content Include="image\banner\banner.png" />
@@ -262,6 +267,23 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPost.aspx.cs">
+      <DependentUpon>AddPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddPost.aspx.designer.cs">
+      <DependentUpon>AddPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailPost.aspx.cs">
+      <DependentUpon>DetailPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailPost.aspx.designer.cs">
+      <DependentUpon>DetailPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dto\DanhSachReviewDto.cs" />
+    <Compile Include="Dto\DetailPostDto.cs" />
+    <Compile Include="Dto\DetailPostFake.cs" />
     <Compile Include="Entites\Post.cs" />
     <Compile Include="Entites\User.cs" />
     <Compile Include="Global.asax.cs">
@@ -285,6 +307,10 @@
     <Compile Include="Migrations\202012101556504_init.Designer.cs">
       <DependentUpon>202012101556504_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012130121273_fixPost.cs" />
+    <Compile Include="Migrations\202012130121273_fixPost.Designer.cs">
+      <DependentUpon>202012130121273_fixPost.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
@@ -301,6 +327,8 @@
     <Content Include="AllCss\register.scss" />
     <Content Include="AllCss\login.css.map" />
     <Content Include="AllCss\login.scss" />
+    <Content Include="AllCss\home.css.map" />
+    <Content Include="AllCss\home.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -316,6 +344,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202012101556504_init.resx">
       <DependentUpon>202012101556504_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012130121273_fixPost.resx">
+      <DependentUpon>202012130121273_fixPost.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

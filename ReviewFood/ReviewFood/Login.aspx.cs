@@ -23,8 +23,10 @@ namespace ReviewFood
                 }
                 else
                 {
-                    Session["User"] = User;
+                    Session["User"] = User;                  
+                    
                     Response.Redirect("Home.aspx");
+                    
                 }
             }
         }

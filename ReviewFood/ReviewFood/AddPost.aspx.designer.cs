@@ -11,7 +11,7 @@ namespace ReviewFood
 {
 
 
-    public partial class Home
+    public partial class AddPost
     {
     }
 }

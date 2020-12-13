@@ -12,5 +12,6 @@ namespace ReviewFood.Entites
         public string Content { get; set; }
         [ForeignKey(nameof(CreatorUserId))]
         public User User { get; set; }
+        public string Address { get; set; }
     }
 }
